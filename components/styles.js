@@ -149,7 +149,6 @@ export const View = styled.a`
 export const Navbar = styled.div`
   z-index: 100;
   font-family: 'aqua';
-  text-decoration: none;
   font-size: 20px;
   position: fixed;
   width: fit-content;
@@ -174,7 +173,8 @@ export const Navbar = styled.div`
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
   }
-  & p {
+  & p, a {
+    text-decoration: none;
     cursor: pointer;
     color: #eebdc7;
     transition: transform, color 0.5s ease-in-out;
@@ -184,7 +184,7 @@ export const Navbar = styled.div`
       margin: 10px;
     }
   }
-  & p:hover {
+  & p:hover, a:hover {
     transform: translateY(-4px);
     color: #ddd6f3;
   }

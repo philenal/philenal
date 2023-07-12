@@ -15,7 +15,7 @@ export default function NavBar(props) {
         <p onClick={() => executeScroll(aboutRef)}>about</p>
         <p onClick={() => executeScroll(projectsRef)}>projects</p>
         <p onClick={() => executeScroll(artRef)}>art</p>
-        <p>resume</p>
+        <a href={`/resume.pdf`}>resume</a>
     </Navbar>
   )
 }
