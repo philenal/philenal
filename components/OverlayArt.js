@@ -6,7 +6,7 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-const images = importAll(require.context('../public/art', false, /\.(png|jpe?g|svg|gif|GIF|PNG|JPE?G)$/));
+const images = importAll(require.context('/public/art', false, /\.(png|jpe?g|svg|gif|GIF|PNG|JPE?G)$/));
 
 export default function OverlayArt() {
   // remove duplicates
